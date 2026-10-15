@@ -1,0 +1,18 @@
+{
+  "mode": "synthetic",
+  "business_id": "fictional-fieldnotes",
+  "cohort": "new-offer-pilot-october-14",
+  "window": {
+    "start": "2026-10-14T00:00:00Z",
+    "end": "2026-10-15T00:00:00Z"
+  },
+  "observed_at": "2026-10-15T12:00:00Z",
+  "source": "fictional measured pilot; separate from accounting fixture",
+  "access_ok": true,
+  "measurement_valid": true,
+  "minimum_visits": 100,
+  "qualified_visits": 120,
+  "offer_interactions": 0,
+  "checkout_intents": 0,
+  "paid_orders": 0
+}

@@ -2,7 +2,7 @@
 
 ### The Company Stack: give your AI agent a business it can actually operate.
 
-A working starter for a small digital-product business: a clear offer, one execution owner, bounded tasks, independent checks, and a record of what changed.
+Start with a small digital product. Give your agent a clear brief, one bounded task, and a way to check the result. This repo turns lessons from running a tiny AI company into a local demo, operating playbooks and reusable checks.
 
 **Start with the demo. Then bring your own business.** Python 3.10+, no dependencies, no API keys, no network calls.
 
@@ -13,7 +13,28 @@ python3 scripts/company_os.py demo
 python3 scripts/company_os.py verify demo-output
 ```
 
-The demo catches a worker claiming a sale without a payment record, rejects it, then reconciles synthetic purchase, refund, and fee records. It also chooses a funnel bottleneck and creates a bounded task. **Every event is simulated. No product is published and no money moves.**
+The demo takes one local task from observation to a checked offer draft. It also rejects an unsupported sale and reconciles a separate synthetic ledger. **Every business event is simulated. No model is called, no product is published and no money moves.**
+
+```mermaid
+flowchart LR
+    A[Observe the funnel] --> B[Choose one bounded task]
+    B --> C[Write a local offer draft]
+    C --> D[Check artifact and task contract]
+    D --> E[Close task and save lesson]
+```
+
+Expected output, abbreviated:
+
+```text
+SIMULATED DEMO — no model, external actions, or real sales
+Bottleneck: offer_interactions
+PASS: draft.md created, hashed, and task closed as verified_local
+Separate synthetic accounting window: $58.00 gross - $29.00 refunds - $2.00 fees = $27.00 after fees
+Settlement: unknown. Profit: unknown. Real sales verified: 0.
+PASS: fixture scopes, task, local draft proof, structural checks, learning, and synthetic ledger verified
+```
+
+Open the output alongside [the worked example](docs/worked-example.md). A verified draft proves the local task finished; it does not prove that anyone wants the product.
 
 ## Point your agent here
 
@@ -30,8 +51,9 @@ Works as a file-based contract with an agent that can read Markdown and run Pyth
 | [10-minute setup](START_HERE.md) | Create a private workspace and choose the first real move |
 | [Agent contract](AGENTS.md) | Ownership, budgets, evidence, and boundaries |
 | [Company Stack principles](principles/README.md) | Five ranked judgments, plus the supporting operating rules |
+| [Your first real pilot](docs/pilot-plan.md) | Move from the example to your own customer, product and approved test |
 | [End-to-end playbook](docs/business-lifecycle.md) | Customer problem → product → checkout → distribution → support → reconciliation |
-| [Synthetic example](examples/fieldnotes-kit/README.md) | A complete fictional digital-product business |
+| [Synthetic example](examples/fieldnotes-kit/README.md) | A worked example for a fictional digital product |
 | [Live demo script](docs/demo.md) | A five-minute walkthrough with an intentional false-success claim |
 | [Templates](templates/README.md) | Offer, task, evidence, experiment, switch trial, and daily review |
 | [Source notes](SOURCES.md) | Origins, personal experience, and limits |
@@ -46,15 +68,6 @@ Works as a file-based contract with an agent that can read Markdown and run Pyth
 
 [Read the principles, challenge them, and add your own.](principles/README.md)
 
-```mermaid
-flowchart LR
-    A[Owner: goal and permissions] --> B[Controller: choose bottleneck]
-    B --> C[Worker: one bounded task]
-    C --> D[Verifier: read source evidence]
-    D --> E[Learning: revise one decision]
-    E --> B
-```
-
 ## What “zero-human” means here
 
 Reduce routine execution. Keep a human accountable for the business, money, identity, customer commitments, and permissions. This is an operating scaffold and local simulator, not a deployed company, legal entity, payment integration, autonomous sales engine, or promise of revenue.
@@ -65,6 +78,7 @@ The public repo contains reusable mechanisms and fictional examples. Your custom
 
 ```bash
 python3 scripts/company_os.py init --workspace ../my-private-company --name "My Company"
+python3 scripts/company_os.py check-workspace ../my-private-company
 python3 -m unittest discover -s tests -v
 python3 scripts/check_repo.py
 ```

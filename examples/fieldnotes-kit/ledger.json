@@ -7,23 +7,36 @@
     {
       "id": "demo-order-1",
       "type": "purchase",
-      "amount_cents": 2900
+      "amount_cents": 2900,
+      "business_id": "fictional-fieldnotes",
+      "occurred_at": "2026-10-02T12:00:00Z"
     },
     {
       "id": "demo-order-2",
       "type": "purchase",
-      "amount_cents": 2900
+      "amount_cents": 2900,
+      "business_id": "fictional-fieldnotes",
+      "occurred_at": "2026-10-03T12:00:00Z"
     },
     {
       "id": "demo-refund-1",
       "type": "refund",
       "purchase_id": "demo-order-2",
-      "amount_cents": 2900
+      "amount_cents": 2900,
+      "business_id": "fictional-fieldnotes",
+      "occurred_at": "2026-10-04T12:00:00Z"
     },
     {
       "id": "demo-fees-1",
       "type": "fee",
-      "amount_cents": 200
+      "amount_cents": 200,
+      "business_id": "fictional-fieldnotes",
+      "occurred_at": "2026-10-05T12:00:00Z"
     }
-  ]
+  ],
+  "business_id": "fictional-fieldnotes",
+  "window": {
+    "start": "2026-10-01T00:00:00Z",
+    "end": "2026-10-08T00:00:00Z"
+  }
 }

@@ -2,9 +2,13 @@
 
 A working workflow is an asset. Replacing it costs setup time, access debugging, regression recovery, and attention even when token capacity looks attractive.
 
-**Rule:** run a candidate alongside the baseline on one bounded workflow. Measure destination-verified completion, time, total cost, recovery effort, and access reliability. Set the acceptance rule and rollback path before migrating.
+## What taught me this
 
-Paras's account, recorded October 15, 2026: moving from OpenClaw to Hermes caused about a week of regression before returning to previous performance; after 30 days it had not surpassed the baseline. A later Dot trial was repeatedly blocked by access issues despite the appeal of advertised capacity. These are personal operating experiences, not controlled product benchmarks or independently verified offer terms.
+OpenClaw was working. The move to Hermes cost a full week of regression before returning to that baseline; after 30 days, it still had not surpassed it. Dot's advertised capacity was appealing, but repeated access failures stopped the work and I moved it back to Hermes.
+
+The change is a smaller trial before a full migration. Preserve the working path, run the same task on both, and count the time you spend repairing the candidate. My timeline is a firsthand assessment, not a controlled benchmark. It says nothing about a model's reasoning quality in isolation.
+
+**Rule:** run a candidate alongside the baseline on one bounded workflow. Measure destination-verified completion, time, total cost, recovery effort, and access reliability. Set the acceptance rule and rollback path before migrating.
 
 **Test:** fill [the switch trial](../templates/switch-trial.md). A candidate that is cheaper per token but cannot reach the required business system does not pass.
 
