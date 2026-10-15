@@ -1,0 +1,29 @@
+{
+  "mode": "synthetic",
+  "currency": "USD",
+  "source": "fictional teaching fixture; not a payment provider",
+  "observed_at": "2026-10-15T12:00:00Z",
+  "events": [
+    {
+      "id": "demo-order-1",
+      "type": "purchase",
+      "amount_cents": 2900
+    },
+    {
+      "id": "demo-order-2",
+      "type": "purchase",
+      "amount_cents": 2900
+    },
+    {
+      "id": "demo-refund-1",
+      "type": "refund",
+      "purchase_id": "demo-order-2",
+      "amount_cents": 2900
+    },
+    {
+      "id": "demo-fees-1",
+      "type": "fee",
+      "amount_cents": 200
+    }
+  ]
+}

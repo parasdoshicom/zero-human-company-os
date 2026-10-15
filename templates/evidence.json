@@ -1,0 +1,15 @@
+{
+  "claim": "REPLACE",
+  "status": "unknown",
+  "mode": "unknown",
+  "source": "REPLACE",
+  "observed_at": null,
+  "decision_window": {
+    "start": null,
+    "end": null
+  },
+  "freshness_limit_minutes": 60,
+  "owner": "REPLACE",
+  "limitations": [],
+  "private_source_pointer": null
+}
