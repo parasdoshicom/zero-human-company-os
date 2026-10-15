@@ -93,7 +93,16 @@ Built for operators who want to learn by running a small, bounded experiment. Co
 
 [MIT license](LICENSE) · [Security and privacy](SECURITY.md) · [Known limits](docs/limitations.md)
 
+## Write and analyze with companion tools
+
+Company OS handles the operating loop. Add [Your Voice](https://github.com/parasdoshicom/your-voice) as the default writing skill for blog posts, product guides, landing pages, LinkedIn drafts, and Reddit contributions. Use [GetChatData](https://github.com/parasdoshicom/getchatdata) when claims need analytical evidence. Both are optional; the local demo requires neither.
+
+[Follow the content workflow](docs/write-content.md): brief → draft → voice review → fact check → exact approval → authorized publication → destination verification. Installation and writing guidance never authorize an outbound action.
+
 ## Related projects
 
 - [GetChatData](https://github.com/parasdoshicom/getchatdata): AI and data workflows for analysis.
 - [Your Voice](https://github.com/parasdoshicom/your-voice): writing guidance that preserves your meaning and voice.
+- [World-Class AI + Data Operator](https://github.com/parasdoshicom/ai-plus-data): public leadership playbooks for trusted metrics, decisions, adoption, and operating cadence.
+
+[See all four projects on Paras's profile](https://github.com/parasdoshicom).

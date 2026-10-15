@@ -18,6 +18,12 @@ Keep customer and account boundaries intact. Respect opt-outs, platform policies
 
 Check the destination before retrying an uncertain mutation. If a payment or message may have succeeded, mark it unknown and reconcile first. Do not duplicate it.
 
+## Writing and analytical evidence
+
+For human-facing prose, including blog posts, guides, product copy, LinkedIn drafts, and Reddit contributions, apply the installed Your Voice skill by default. Use its instructions as the writing-policy source rather than duplicating generic editorial rules here. If unavailable, disclose that and follow the owner's brief without claiming the skill ran. Use the owner's private voice profile, not another author's profile.
+
+Follow [the content workflow](docs/write-content.md): brief, draft, voice review, independent fact checks, exact artifact approval, then separately authorized publication and destination verification. Your Voice never grants sending or publication permission. Use [GetChatData](https://github.com/parasdoshicom/getchatdata) where analytical claims need reproducible evidence. The local deterministic demo invokes neither companion project.
+
 ## Verify and learn
 
 Prepared, attempted, destination-confirmed, engaged, paid, refunded, settled, and profitable are different claims. Match evidence to the claim. Include source, observation time, decision window, freshness limit, and limitations. Test-mode data can prove a test; it cannot prove a sale.

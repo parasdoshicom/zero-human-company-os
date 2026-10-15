@@ -15,6 +15,10 @@ Use this as an acceptance checklist in your private workspace. Each stage produc
 | Reconciliation | Orders, refunds, fees, payouts, costs | Provider records match report; test events excluded from actual revenue |
 | Iteration | One experiment, decision window, stop rule | Enough valid exposure; uncertainty retained; next action tied to result |
 
+## Content production
+
+Use [the writing workflow](write-content.md) for product explanations, guides, blog posts, and channel contributions. When installed, Your Voice is the default writing skill; the company brief and source evidence determine the substance. GetChatData can support analytical claims. Keep drafts, voice review, fact checks, publication approval, and destination verification as separate steps. Neither companion tool is required for the synthetic demo.
+
 ## Practical first product
 
 Choose something you can inspect: a workbook, research brief, lesson, template pack, or small software utility. A product can use AI without claiming to reproduce a frontier model or a service like ChatGPT. This repo provides the operating process; it does not include model training, inference hosting, or a SaaS backend.
